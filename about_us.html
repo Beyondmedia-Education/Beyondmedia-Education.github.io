@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+  
+	<title>Beyondmedia Education &mdash; About Us</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<!--[if lt IE 8]>
+  <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection">
+<![endif]-->
+<link href="/css/grid.css" rel="stylesheet" type="text/css">
+<link href="/css/reset.css" rel="stylesheet" type="text/css">
+<link href="/css/styles.css" rel="stylesheet" type="text/css">
+<link href="/css/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="/js/jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript" src="http://use.typekit.com/tat7pmu.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<link rel="Stylesheet" href="/css/ui.selectmenu.css" type="text/css"/> 
+	<script type="text/javascript" src="/js/ui.selectmenu.js"></script>
+	<script type="text/javascript"> 
+			$(function(){ 
+				$('select.dropdown').selectmenu({style:'dropdown', maxHeight: 300, width: 200});
+				$('select.dropdown-sidebar').selectmenu({style:'dropdown', maxHeight: 300, width: 100});
+			});
+	</script>
+	
+	<script type="text/javascript"> 
+	$(function(){
+		$("button.cart").button({
+            icons: {
+                primary: 'ui-icon-cart'
+            }
+        });
+		$("button.trash").button({
+        	icons: {
+        		primary: 'ui-icon-trash'
+        	}
+        });
+		$("button.refresh").button({
+        	icons: {
+        		primary: 'ui-icon-arrowrefresh-1-e'
+        	}
+        });
+        $("button.add").button({
+        	icons: {
+        		primary: 'ui-icon-plus'
+        	}
+        });
+        $("button.person").button({
+        	icons: {
+        		primary: 'ui-icon-person'
+        	}
+        });
+        $("button.donate").button({
+        	icons: {
+        		primary: 'ui-icon-heart'
+        	}
+        });
+        $("button.document").button({
+        	icons: {
+        		primary: 'ui-icon-document'
+        	}
+        });
+        $("button.arrow-down").button({
+        	icons: {
+        		primary: 'ui-icon-triangle-1-s'
+        	}
+        });
+        $("a.twitter").button({
+        	icons: {
+        		primary: 'ui-icon-comment'
+        	}
+        });
+        $("a.category").button({
+        	icons: {
+        		primary: 'ui-icon-tag'
+        	}
+        });
+	});
+</script>
+	
+	<script src="/js/overlay.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        $(function() {
+            $('.play').overlay({
+                image: 'http://trailers.apple.com/global/images/thumb-overlay-play.png'
+            });
+        });
+    </script>
+
+    
+       <script type="text/javascript" src="/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="/js/fancybox/jquery.fancybox-1.3.4.css" media="screen"/>
+  <script type="text/javascript">
+$(document).ready(function(){
+	$(".videobox").fancybox({
+		'titlePosition'	: 'inside',
+		'transitionIn'	: 'elastic',
+		'transitionOut' : 'elastic',
+		'overlayColor'	: '#000000',
+		'overlayOpacity': 0.8,
+		'type'			: 'iframe',
+                'width' : '75%',
+'height': '75%'
+	});
+
+	$(".imagebox").fancybox({
+		'titlePosition'	: 'inside',
+		'transitionIn'	: 'elastic',
+		'transitionOut' : 'fade',
+		'overlayColor'	: '#000000',
+		'overlayOpacity': 0.8,
+	});
+	
+	$("a[rel=photo_group]").fancybox({
+		'transitionIn'		: 'elastic',
+		'transitionOut'		: 'fade',
+		'titlePosition' 	: 'inside',
+		'overlayColor'	: '#000000',
+		'overlayOpacity': 0.8,
+		'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+		    return ' <div align="right">' +  (currentIndex + 1) + ' of ' + currentArray.length + '</div>' + title + ' ';
+		}
+	});
+});
+</script>
+
+<script>
+	$(document).ready(function() {
+	
+	//When page loads...
+	$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+	
+	//On Click Event
+	$("ul.tabs li").click(function() {
+	
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+	
+		var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active ID content
+		return false;
+	});
+	
+	});
+	</script>
+	
+		<script src="/js/jquery.fixedfloating.js"></script>
+	<script>
+		$(function() {$('#fixed').fixedfloating();});
+	</script>
+
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+	<script type="text/javascript">_uacct = "UA-71633-1";urchinTracker();</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="span-24">
+				<div id="top">
+					
+						
+						<div id="testimonial"><img src="/images/testamonials/amber.gif" width="329" height="96"></div>
+						
+					
+					<img src="/images/spacer.gif" height="58"><br/>
+					<a href="/index.html"><img src="/images/beyondmedia.gif" width="405" height="42"></a>
+				</div>
+
+			<div id="menu">
+				<div id="links">
+					<!--<a href="https://web.archive.org/web/20130502171717/https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=94SP7L2538CTU" class="white rounded { top-left 8px bottom-left 8px }" target="_blank">Make a Donation</a>-->
+					<a href="/index.html" class="regular">PROJECTS</a>
+					<a href="/about_us.html" class="highlight">ABOUT US</a>
+					<!--<a href="http://www.beyondmedia.org/store" class="regular">STORE</a>-->
+					<a href="/press/index.html" class="regular">PRESS</a>
+					<a href="/events/index.html" class="regular">EVENTS</a>
+				</div>
+			</div>
+			</div>
+				
+		<div class="span-24">
+		
+				
+				
+				<ul class="tabs">
+					<li><a href="#tab1">MISSION</a></li>
+					<li><a href="#tab2">IDEALS</a></li>
+				</ul>
+				
+					<div class="tab_container clearfix">
+						<div id="tab1" class="tab_content">
+						<h2>Our Mission</h2>
+							<p>Beyondmedia Education's mission is to collaborate with under-served and under-represented women, youth and communities to tell their stories, connect their stories to the world around us, and organize for social justice through the creation and distribution of media arts.</p>
+							<br/>
+							<h2>Our Vision</h2>
+							<p>Beyondmedia Education envisions a compassionate and just society where universal access to media tools and information equip women and youth to document and communicate their stories, serve as educators and role models for others, influence public policy, and generate social transformation.
+							</p>
+							<h2>Promotional Trailer</h2>
+							<p>
+							<iframe src="http://player.vimeo.com/video/1712495?title=0&amp;byline=0&amp;portrait=0" width="670" height="447" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</p>
+						</div><!-- tab1 -->
+						
+						<div id="tab2" class="tab_content">
+							<p><em><strong>Beyondmedia...</strong></em>
+							  <ul class="bullet">
+								<li>generates images that are inclusive, realistically depicting the diversity of women in the world.</li>
+								<li>privileges storytelling and storytellers: every speaker is a narrator.</li>
+								<li>is stylistically mixed, produced from multiple perspectives, improvisational and intentionally open-ended.</li>
+								<li>is not mass media, it's &quot;low tech&quot;: whenever possible, we use available light, ambient sound, minimal equipment, and little or no crews.</li>
+								<li>works collaboratively to create media that is healing and revealing of diverse expressions of human connectedness that are usually missing in conventional media.</li>
+								<li>places respect for the subject above all else (the &quot;golden rule&quot;).</li>
+								<li>reflects the people behind the camera as well as those in front of it.</li>
+								<li>strives to break down boundaries that are maintained through so-called &quot;professional standards&quot; controlling expression and containing resistance.</li>
+								<li>promotes a world in which power is shared and each person is heard as a speaker with narrative agency.</li>
+								<li>defines narrative agency as the linchpin of personal and global transformation: to frame and speak one's point of view, and derive response.</li>
+								<li>understands the role of art in the world as presenting the broadest range of images, such that each person has the opportunity to see her or his reflection somewhere in that mirror.</li>
+								<li>is committed to the free expression of all people, including us.</li>
+							  </ul>
+							  </p>
+						</div><!-- tab2 -->
+				
+						</div><!-- tab container -->
+					<!--
+					<div class="span-18">
+					<h1>STAFF</h1>
+					<div class="content">
+						<ul class="list">
+						
+							<li class="even clearfix">
+								<h2 class="member-title">Salome Chasnoff<span>, Artistic Director / Founder</span></h2>
+								<p>							<img class="member-image" alt="Salome Chasnoff Artistic Director / Founder"  width="150" height="150" src="/images/uploads/Salome.png" />
+															<p>
+				Salome Chasnoff is an award-winning documentary filmmaker, installation artist and media activist who has been guiding Beyondmedia&rsquo;s artistic production since founding it in 1996. Her strong commitment to using media for liberation education and progressive organizing has drawn like-minded people over the years to shape Beyondmedia&rsquo;s distinctive artistic and political vision. Salome has an M.A. in Theatre and Performance and a Ph.D. in Performance Studies from Northwestern University. She has been an arts educator for more than 20 years in university and community settings, and has produced more than 25 works, several dedicated to expanding media access to the diverse stories of women and youth.</p>
+				</p>
+							</li>
+						
+							<li class="odd clearfix">
+								<h2 class="member-title">Davey Ball<span>, Program Staff</span></h2>
+								<p>							<img class="member-image" alt="Davey Ball Program Staff"  width="150" height="127" src="/images/uploads/davey.png" />
+															<p>
+				Davey Ball began learning website development while publishing his own internationally focused arts and music magazine onlinecalled QueerKit in 2003. He studied Photography at the University of Central Florida and has since been published online in Spark Magazine and in print as a contributor to and Chicago representative of Bust Magazine. Before moving to Chicago he worked at the Minnesota AIDS Project doing HIV prevention, counseling and testing on-site at various bars and clubs throughout and city. In Chicago he has worked to organize a monthly gathering called Chances Dances as an effort to mobilize the marginalized gay, lesbian and trans communities by creating a safe space for them to socialize.</p>
+				</p>
+							</li>
+						
+							<li class="even clearfix">
+								<h2 class="member-title">Joanne Archibald<span>, Associate Director</span></h2>
+								<p>							<img class="member-image" alt="Joanne Archibald Associate Director"  width="150" height="156" src="/manage/cache/b3431ec0823ca0768b632af32c1c673c1f8c230b.jpg" />
+															<p>
+				Before coming to Beyondmedia in 2007, Joanne worked at Chicago Legal Advocacy for Incarcerated Mothers (CLAIM) for 14 years, beginning as Advocacy Coordinator, and then working as Advocacy Project Director and Associate Director. She serves on the Advisory Board of Grace House, a transitional program for women exiting the prison system, and on the Institutional Review Board for Northwestern University, as an advisor on prison research. Finally, after 27 years and seven schools, she earned her BA in 1994 from Northeastern Illinois University, but her greatest and most rewarding learning experience has been raising her son.</p>
+				</p>
+							</li>
+						
+							<li class="odd clearfix">
+								<h2 class="member-title">Lauren La Rose<span>, Program Staff</span></h2>
+								<p>							<img class="member-image" alt="Lauren La Rose Program Staff"  width="150" height="139" src="/manage/cache/6daa4820b03be321b8197a0df1840d4b09e240ba.jpg" />
+															<p>
+				Lauren La Rose recently&nbsp;graduated with a BFA from the School of the Art Institute of Chicago&nbsp;(SAIC) with an emphasis in fiber and material studies. She is a Merit&nbsp;Scholarship Recipient, won an Academic Achievement Scholarship, and&nbsp;was honored with a SAIC Student Leadership Award in 2007 and 2010.&nbsp;Lauren has exhibited her work nationally at Beaver Street Gallery, Impala Gallery, &nbsp;Sullivan Gallery, Peanut Gallery, and at the Royal Ontario Museum in Canada.&nbsp;Lauren&#39;s current studio practice addresses the poetics of labor and her personal need to &nbsp;develop intimate meditative spaces through the practice of hand weaving. Her experiences &nbsp;as a peer-peer facilitator and advocate for mental health issues are also an integral part of her art practice. Lauren began as a Beyondmedia intern in 2009 and was&nbsp;recently hired as Program Staff.&nbsp;</p>
+				</p>
+							</li>
+						
+							<li class="even clearfix">
+								<h2 class="member-title">Rebecca Connie<span>, Program Director</span></h2>
+								<p>							<img class="member-image" alt="Rebecca Connie Program Director"  width="150" height="160" src="/manage/cache/33ba87f936c179c12c87729ba0b5ddf0385a7b35.jpg" />
+															<p>
+				rebecca s. a. connie is currently a film and video MFA candidate at Columbia College Chicago. She strives to use art as a tool for activism, education, and communal solidarity. Classically trained in the theatre arts, she received a BA in media studies and anthropology from DePaul University. She has primarily worked with youth and young adults for Chicago Public Schools, Gallery 37, DePaul University, and Columbia College. She has produced both narrative and documentary films, covering such topics as autism, urban education, and contemporary materialism. rebecca is currently working on an independent documentary concerning the idealistic notions of motherhood and mental health.</p>
+				</p>
+							</li>
+						
+							<li class="odd clearfix">
+								<h2 class="member-title">Zaida Sanabia<span>, Youth Outreach Coordinator</span></h2>
+								<p>							<img class="member-image" alt="Zaida Sanabia Youth Outreach Coordinator"  width="150" height="166" src="/manage/cache/3f8782d69daac8f9d5752ad3f05a90d4d37275b3.jpg" />
+															<p>
+				Zaida Sanabia began learning video production when she participated in a Beyondmedia workshop at Horizon&#39;s Young Women&#39;s Drop-In Program in 2001. In 2002 Beyondmedia Education partnered with Sanabia to produce A Fish Almost Eaten by a Shark. She has just completed her first year of college and she&#39;s begun working on a new Beyondmedia project, Can LGBTQ + School = Safe?, gathering stories of anti-gay violence and sexuality-based discrimination from students in Illinois schools. Most recently, Sanabia won Chicago Foundation for Women&#39;s Ripple Effect Award as &quot;a shining example of the triumph of women and girls when given opportunity&quot; in 2003, and the Amigas Latinas &quot;Aixa Diaz Scholarship&quot; for her work in creating safe schools in 2004. On 2006 Sanabia with the help and support of Amigas Latinas headed the first Lesbian, Bisexual, Transgender Young Latina group &quot;Amiguitas&quot; in Chicago.</p>
+				</p>
+							</li>
+						
+						</ul>
+					</div>
+					-->
+					<!--
+					<h1>BOARD</h1>
+					<div class="content">
+						<ul class="list">
+						
+						</ul>
+					</div>
+					-->
+					
+					</div>
+				
+				
+		
+	
+	</div><!-- span-24 -->
+
+	</div><!-- container -->
+	
+	<div class="footer">
+<div class="container">
+<div class="span-24" id="footer">
+	<div class="span-8">
+	
+	</div>
+	
+	<div class="span-8">
+	<!--<h6>Stay in Touch</h6>-->
+	<ul>
+		<!--<li><a href="https://web.archive.org/web/20130502171717/http://beyondmedia.us1.list-manage.com/subscribe?u=c9ee6fdf907e5920036743fda&amp;id=198009b131" target="_blank">Join Our Mailing List</a></li>-->
+		<li><a href="http://twitter.com/BeyondmediaEdu" target="_blank">Twitter</a></li>
+		<li><a href="https://vimeo.com/beyondmedia" target="_blank">Vimeo</a></li>
+		<li><a href="https://www.youtube.com/channel/UC74OT27utTGMYJbNU5KG3uQ" target="_blank">YouTube</a></li>
+		<li><a href="https://www.flickr.com/photos/beyondmedia/" target="_blank">Flickr</a></li>
+		
+	</ul>
+	</div>
+	
+	<div class="span-8 last"><!--
+	<h6>
+   <fb:login-button autologoutlink="false" size="medium" v="1" onlogin="window.location='http://www.beyondmedia.org/?ACT=49&params=cmV0dXJuX2RlZmF1bHQ9fHJldHVybl9mb3JfcGFzc2l2ZV9yZWdpc3Rlcj1kOWlyZXR1cm5fZGVmYXVsdHxyZXR1cm5fb25fZmFpbHVyZT1zaXRlL2ZhaWx8cmV0dXJuX3RvX2NvbmZpcm1fYWNjb3VudF9zeW5jPWQ5aXJldHVybl9kZWZhdWx0fHJldHVybl90b19yZWdpc3Rlcj1zaXRlL3JlZ2lzdGVyfHJldHVybl93aGVuX2xvZ2dlZF9pbj1zaXRlL2luZGV4fHJldHVybl93aGVuX2xvZ2dlZF9vdXQ9ZDlpcmV0dXJuX3doZW5fbG9nZ2VkX2lufGlzX2VlX21lbWJlcj1u';" show-faces="false" width="200" max-rows="1" scope="email,read_stream,publish_stream"></fb:login-button>    </h6>-->
+	<!--<h6>Our Other Websites</h6>
+	<ul>
+		<li><a href="https://web.archive.org/web/20130502171717/http://www.womenandprison.org/" target="_blank">Women &amp; Prison</a></li>
+		<li><a href="https://web.archive.org/web/20130502171717/http://www.chainofchange.com/" target="_blank">Chain of Change</a></li>
+		<li><a href="https://web.archive.org/web/20130502171717/http://www.heyitsviral.com/" target="_blank">HIV: Hey, It's Viral!</a></li>
+	</ul><br/>-->
+	</div>
+	</div><!-- container -->
+</div><!-- footer -->
+
+	</body>
+</html>
