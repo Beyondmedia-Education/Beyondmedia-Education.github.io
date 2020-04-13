@@ -255,7 +255,7 @@ html ul.tabs li.active, html ul.tabs li.active a:hover  { /*--Makes sure that th
 }
 
 .tab_container {
-	width: 710px;
+	width: 950px;
 	display: block;
 	margin-bottom: 10px;
 	border-style: none;
